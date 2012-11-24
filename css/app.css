@@ -1,0 +1,98 @@
+/* -----------------------------------------
+	Created by Justin Peacock (@mrdink)
+	sixteenbit.com \m/
+----------------------------------------- */
+/* -----------------------------------------
+	Imports
+----------------------------------------- */
+@import url("../css/font-awesome.css");
+/* -----------------------------------------
+	Globals
+----------------------------------------- */
+body { background: #eee url(../img/bg.gif) repeat }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: 0px 1px 0px #ffffff;
+    margin-bottom: 0;
+}
+hr {
+    border: 0;
+    border-top: 1px solid rgba(238,238,238,0.8);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    margin: 5px 0 21px;
+}
+/* -----------------------------------------
+	Animation
+----------------------------------------- */
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* -----------------------------------------
+	Main
+----------------------------------------- */
+#main { padding: 60px 0 }
+/* -----------------------------------------
+	Details
+----------------------------------------- */
+#details { padding-top: 80px }
+/* -----------------------------------------
+	Features
+----------------------------------------- */
+#features { padding: 20px 0 }
+/* -----------------------------------------
+	Footer
+----------------------------------------- */
+#footer {
+    background: #444;
+    width: 100%;
+    color: #fafafa;
+    padding-top: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ffffff;
+    box-shadow: inset 0px 1px 10px rgba(0,0,0,0.5);
+}
+    #footer .copyright { font-size: 12px }
+/* -----------------------------------------
+	Mobile
+----------------------------------------- */
+@media only screen and (max-width: 767px) { 
+	#main { padding: 10px }
+	#details { padding: 0px 0px 20px 0px }
+}
